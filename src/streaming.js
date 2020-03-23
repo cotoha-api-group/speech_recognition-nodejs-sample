@@ -22,6 +22,9 @@ let Requester = new CotohaApi(filepath = './sample.json',
     
 Requester.getToken().then(res => {
     userData = res;
+    if( userData.accessToken === undefined){
+        console.log("accessToken is invalid.");
+    }
     Requester.start(userData, dictpath = '../resources/sample_dict.tsv',samplingRate = rate).then(async (id) => {
         userData.uniqueId = id;
         return new Promise(async (resolve, reject) => {
