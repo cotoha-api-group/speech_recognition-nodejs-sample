@@ -1,0 +1,9 @@
+*.DS_Store
+/src/*
+!/src/*.js
+!/src/sample.json
+/resources/*
+!/resources/sample.wav
+!/resources/sample2.wav
+!/resources/sample_dict.wav
+/node_modules/*

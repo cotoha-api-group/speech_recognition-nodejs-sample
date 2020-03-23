@@ -1,2 +1,30 @@
-# speech_recognition-nodejs-sample
-COTOHA 音声認識API サンプルコード(Node.js)
+COTOHA API 音声認識サンプルクライアント(Node.js)
+====
+ストリーミング音声認識APIを利用して、wavファイルのテキスト化を行うNode.jsプログラムです。
+
+
+
+
+# Usage
+1. コマンド`npm install`でパッケージをインストールしてください。
+1. `src/sample.json`を参考にあなたの認証情報を記載したjsonファイルを任意の名前で作成してください。
+
+## file.js
+ファイル音声認識APIを利用して、wavファイルのテキスト化を行うプログラムです。ただし、音声ファイルの長さが1分以内である必要があります。
+
+## streaming.jsv
+ストリーミング音声認識APIを利用して、wavファイルのテキスト化を行うプログラムです。
+
+
+## upload_dictionary.js
+ユーザ辞書登録APIを利用して、辞書登録を行うプログラムです。
+
+## clear_dictionary.js
+ユーザ辞書クリアAPIを利用して、辞書の削除を行うプログラムです。
+
+## isset_dictonary.js
+ユーザ辞書適用状態取得APIを利用して、アップロードした辞書が適用されているかを確認するプログラムです
+
+## download_dictonary.js
+ユーザ辞書ダウンロードAPIを利用して、辞書のダウンロードを行うプログラムです。
+
