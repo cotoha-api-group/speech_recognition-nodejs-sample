@@ -7,7 +7,7 @@ let buffer = fs.readFileSync('../resources/sample.wav');
 let wavfile = new Wavefile(buffer); // convert to wavefile object
 let rate = wavfile.fmt.sampleRate;
 let samples = wavfile.data.samples;
-let Requester = new CotohaApi(filepath = './sample.json',
+let Requester = new CotohaApi(filepath = './demo.json',
     modelID = 'ja-gen_tf-16',); 
 Requester.getToken().then(res => {
     userData = res;
