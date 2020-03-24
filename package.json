@@ -13,7 +13,9 @@
   "author": "Kai Yeat YEO",
   "license": "MIT",
   "dependencies": {
+    "acorn": "^7.1.1",
     "buffer-chunks": "^0.1.1",
+    "minimist": "^1.2.5",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "wavefile": "^8.4.4"
